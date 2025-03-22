@@ -1,6 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+
+
 .hero {
-    position: relative;
+    /* position: relative; */
     padding: 50px 100px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
   
   .hero-content h1 {
@@ -56,7 +63,7 @@
   /* Yellow Circle */
   .yellow-circle {
     position: absolute;
-    top: 8%; /* Center vertically */
+    top: 35%; /* Center vertically */
     right: 0; /* Align to the right edge */
     width: 750px;
     height: 750px;
@@ -109,6 +116,7 @@
     justify-content: center;
     gap: 40px;
     margin-top: 100px;
+    margin-bottom: 80px;
   }
   
   .stat {
@@ -137,11 +145,16 @@
     flex-direction: column;
     align-items: center;
     gap: 50px; /* Space between cards */
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 /* Enlarged Scroll-Triggered Card */
 .scroll-card {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -169,7 +182,12 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    .hero {
+        padding: 30px;
+        text-align: center;
+    }
     .scroll-card {
+        width: 95%;
         flex-direction: column;
         text-align: center;
         padding: 30px;
@@ -181,3 +199,70 @@
         margin-bottom: 20px;
     }
 }
+
+/* FAQ Section - Enhanced Styling */
+.faq-container {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+  
+  .faq-title {
+    font-size: 32px;
+    text-align: center;
+    color: #1a237e; /* Darker blue */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-item {
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    color: #1a237e;
+  }
+  
+  .faq-toggle {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.open .faq-toggle {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    display: none;
+    padding-left: 10px;
+  }
+  
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+  
