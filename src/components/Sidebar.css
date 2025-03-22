@@ -1,0 +1,59 @@
+Sidebar Container
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden initially */
+    width: 250px;
+    height: 100vh;
+    background-color: #283593;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 200; /* Ensure it appears above other elements */
+  }
+  
+  /* Sidebar Open State */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  /* Sidebar Links */
+  .sidebar-nav a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+  
+  .sidebar-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px; /* Move it to the right to avoid logo overlap */
+    background: #283593;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 201; /* Ensure button is always visible */
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
