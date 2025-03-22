@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EPR/static/css/main.52f178f3.css",
+    "main.js": "/EPR/static/js/main.1d1f2957.js",
+    "static/js/453.0a4bedd9.chunk.js": "/EPR/static/js/453.0a4bedd9.chunk.js",
+    "index.html": "/EPR/index.html",
+    "main.52f178f3.css.map": "/EPR/static/css/main.52f178f3.css.map",
+    "main.1d1f2957.js.map": "/EPR/static/js/main.1d1f2957.js.map",
+    "453.0a4bedd9.chunk.js.map": "/EPR/static/js/453.0a4bedd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52f178f3.css",
+    "static/js/main.1d1f2957.js"
+  ]
+}
