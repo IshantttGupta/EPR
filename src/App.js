@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar';
 import React from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import AboutUs from './Pages/AboutUs';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Router>
       <Header />
       <Sidebar />
+      {/* <Footer/> */}
 
       {/* Routes for Different Pages */}
       <Routes>
